@@ -1,2 +1,3 @@
-# pastel
-A new daily color game
+# Splotch
+
+Splotch is a daily color game.
