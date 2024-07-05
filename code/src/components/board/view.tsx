@@ -135,7 +135,7 @@ export function InfoButton() {
         class="w-full rounded-md p-2 text-woodsmoke-50 dark:text-woodsmoke-950 dark:bg-dove-200 bg-dove-800"
         id="info"
       >
-        Info
+        info
       </button>
     </div>
   );
@@ -162,7 +162,7 @@ export function ShareButton() {
         class="w-full rounded-md p-4 text-woodsmoke-50 dark:text-woodsmoke-950 dark:bg-killarney-500 bg-killarney-700"
         id="submit"
       >
-        Share
+        share
       </button>
     </div>
   );
@@ -183,7 +183,7 @@ export function SubmitButton() {
         class="w-full rounded-md p-4 text-gray-100 dark:text-black bg-dove-900 dark:bg-dove-100"
         id="submit"
       >
-        Submit
+        submit
       </button>
     </div>
   );

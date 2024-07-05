@@ -4,19 +4,20 @@ import { GameInfo } from "../components/game/view";
 import { ThemeToggler } from "../util/theme";
 import { InfoDialog, InfoDialogProvider } from "../components/info/view";
 
-function RefreshButton() {
+function Buttons() {
   const [_, setGame] = useGame();
 
   return (
     <div class="flex space-x-2">
-      <button
-        class="rounded-lg p-2 bg-gray-200 text-black w-full"
+      {/* <button
+        class="w-full rounded-md p-2 text-woodsmoke-50 dark:text-woodsmoke-950 dark:bg-dove-200 bg-dove-800"
         onClick={() => {
           setGame(today(Math.floor(Math.random() * 3000)));
         }}
       >
         random
-      </button>
+      </button> */}
+      <InfoButton />
     </div>
   );
 }
@@ -32,9 +33,8 @@ export default function Home() {
               <div class="flex justify-between items-center">
                 <GameInfo />
                 <ThemeToggler />
-                <InfoButton />
               </div>
-              <RefreshButton />
+              <Buttons />
               <Board />
             </div>
           </main>

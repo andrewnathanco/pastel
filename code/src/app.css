@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100...900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  @apply dark:bg-woodsmoke-900 dark:text-woodsmoke-50 bg-woodsmoke-50 text-woodsmoke-950;
+  @apply dark:bg-woodsmoke-950 dark:text-woodsmoke-300 bg-woodsmoke-50 text-woodsmoke-950;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 700;
 }
@@ -36,38 +36,38 @@
 
 @layer utilities {
   .range-thumb-green {
-    @apply appearance-none w-full h-4 bg-dove-500 rounded-lg cursor-pointer dark:bg-dove-300;
+    @apply appearance-none w-full h-4 bg-dove-200 cursor-pointer dark:bg-woodsmoke-700;
   }
 
   .range-thumb-green::-webkit-slider-thumb {
-    @apply appearance-none w-8 h-16 bg-killarney-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-killarney-500 rounded-lg;
   }
 
   .range-thumb-green::-moz-range-thumb {
-    @apply appearance-none w-8 h-16 bg-killarney-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-killarney-500 rounded-lg;
   }
 
   .range-thumb-red {
-    @apply appearance-none w-full h-4 bg-dove-500 rounded-lg cursor-pointer dark:bg-dove-300;
+    @apply appearance-none w-full h-4 bg-dove-200 cursor-pointer dark:bg-woodsmoke-700;
   }
 
   .range-thumb-red::-webkit-slider-thumb {
-    @apply appearance-none w-8 h-16 bg-thorns-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-thorns-500 rounded-lg;
   }
 
   .range-thumb-red::-moz-range-thumb {
-    @apply appearance-none w-8 h-16 bg-thorns-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-thorns-500 rounded-lg;
   }
 
   .range-thumb-blue {
-    @apply appearance-none w-full h-4 bg-dove-500 rounded-lg cursor-pointer dark:bg-dove-300;
+    @apply appearance-none w-full h-4 bg-dove-200 cursor-pointer dark:bg-woodsmoke-700;
   }
 
   .range-thumb-blue::-webkit-slider-thumb {
-    @apply appearance-none w-8 h-16 bg-denim-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-denim-500 rounded-lg;
   }
 
   .range-thumb-blue::-moz-range-thumb {
-    @apply appearance-none w-8 h-16 bg-denim-500 rounded-lg;
+    @apply appearance-none w-6 h-12 bg-denim-500 rounded-lg;
   }
 }

@@ -26,7 +26,7 @@ export function InfoDialogProvider(props: { children: any }) {
   let [dialog_data, set_dialog] = makePersisted(
     createStore<InfoDialogData>({ dialog_status: true }),
     {
-      name: "splotch_info-dialog",
+      name: "pastel_info-dialog",
     }
   );
 
@@ -76,7 +76,7 @@ export function InfoDialog() {
             id="dialog-header"
             class="flex justify-between items-center text-3xl w-full"
           >
-            <div>Splotch</div>
+            <div>Pastel</div>
             <button
               onClick={() => {
                 close();
@@ -98,47 +98,16 @@ export function InfoDialog() {
           </div>
           <div class="flex flex-col space-y-2">
             <div class="flex flex-col">
-              <div class="text-xl">What is Splotch?</div>
+              <div class="text-xl">What is Pastel?</div>
               <div class="text-md font-light">
-                Splotch is a daily puzzle game where you have to find all of the
-                colors that average up to another color.
+                Splotch is a daily puzzle game where you have to find the red,
+                green and blue values that make up a color.
               </div>
             </div>
             <div class="flex flex-col">
               <div class="text-xl">Scoring</div>
               <div class="text-md font-light">
-                You get scored by the number of colors you've guessed. The lower
-                the better.
-              </div>
-            </div>
-            <div class="flex flex-col space-y-4">
-              <div class="flex flex-col">
-                <div class="text-xl">Tiles</div>
-                <div class="font-light">
-                  Once you select three tiles you can submit your answer. If any
-                  are right they will become hollow. Keep going until all are
-                  hollow.
-                </div>
-              </div>
-              <div class="flex flex-col space-y-2">
-                <ul class="flex flex-wrap gap-2">
-                  <li class="flex flex-col space-y-2 items-center w-fit">
-                    <div class="h-20 w-20 border-8 border-woodsmoke-600 bg-woodsmoke-600 rounded-md"></div>
-                    <div>Selected</div>
-                  </li>
-                  <li class="flex flex-col space-y-2 items-center w-fit">
-                    <div class="h-20 w-20 border-8 border-woodsmoke-600 bg-woodsmoke-600 rounded-md shrink-lg"></div>
-                    <div>Unselected</div>
-                  </li>
-                  <li class="flex flex-col space-y-2 items-center w-fit">
-                    <div class="h-20 w-20 border-8 border-woodsmoke-600 rounded-md"></div>
-                    <div>Correct</div>
-                  </li>
-                  <li class="flex flex-col space-y-2 items-center w-fit">
-                    <div class="h-20 w-20 border-8 bg-woodsmoke-600 border-woodsmoke-600 rounded-full"></div>
-                    <div>Chosen</div>
-                  </li>
-                </ul>
+                You get scored by how close you were to the correct value.
               </div>
             </div>
           </div>
