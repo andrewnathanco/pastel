@@ -558,7 +558,7 @@ const names = [
   ["FFD7A0", "Frangipani", "Yellow"],
   ["029D74", "Free Speech Aquamarine", "Green"],
   ["4156C5", "Free Speech Blue", "Blue"],
-  ["09F911", "Free Speech Green", "Green"],
+  ["09F911", "Brat Green", "Green"],
   ["E35BD8", "Free Speech Magenta", "Red"],
   ["C00000", "Free Speech Red", "Red"],
   ["BFBDC1", "French Grey", "Grey"],

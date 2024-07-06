@@ -66,9 +66,9 @@ export function calculateDifference(color1: string, color2: string): RGBColor {
   const rgb1 = hexToRgb(color1);
   const rgb2 = hexToRgb(color2);
 
-  const rDiff = rgb1.r - rgb2.r;
-  const gDiff = rgb1.g - rgb2.g;
-  const bDiff = rgb1.b - rgb2.b;
+  const rDiff = Math.abs(rgb1.r - rgb2.r);
+  const gDiff = Math.abs(rgb1.g - rgb2.g);
+  const bDiff = Math.abs(rgb1.b - rgb2.b);
 
   return { r: rDiff, g: gDiff, b: bDiff };
 }
