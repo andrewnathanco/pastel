@@ -9,14 +9,14 @@ function Buttons() {
 
   return (
     <div class="flex space-x-2">
-      {/* <button
+      <button
         class="w-full rounded-md p-2 text-woodsmoke-50 dark:text-woodsmoke-950 dark:bg-dove-200 bg-dove-800"
         onClick={() => {
           setGame(today(Math.floor(Math.random() * 3000)));
         }}
       >
         random
-      </button> */}
+      </button>
       <InfoButton />
     </div>
   );

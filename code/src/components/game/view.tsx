@@ -21,27 +21,23 @@ export function GameInfo() {
   );
 
   createEffect(() => {
-    if (game.gamekey && (import.meta.env.VITE_VERSION ?? baseVersion)) {
-      const newGame = game.gamekey && game.gamekey != gamekey();
-
-      const [currentMajor, currentMinor] = parseVersion(game.version);
-      const [envMajor, envMinor] = parseVersion(
-        import.meta.env.VITE_VERSION ?? baseVersion
-      );
-
-      const newMajorMinorVersion =
-        currentMajor !== envMajor || currentMinor !== envMinor;
-
-      if (newGame || newMajorMinorVersion) {
-        localStorage.removeItem("pastel_game");
-        setGame(today(gamekey()));
-      }
-
-      if (newMajorMinorVersion) {
-        localStorage.removeItem("pastel_info");
-        open();
-      }
-    }
+    // if (game.gamekey && (import.meta.env.VITE_VERSION ?? baseVersion)) {
+    //   const newGame = game.gamekey && game.gamekey != gamekey();
+    //   const [currentMajor, currentMinor] = parseVersion(game.version);
+    //   const [envMajor, envMinor] = parseVersion(
+    //     import.meta.env.VITE_VERSION ?? baseVersion
+    //   );
+    //   const newMajorMinorVersion =
+    //     currentMajor !== envMajor || currentMinor !== envMinor;
+    //   if (newGame || newMajorMinorVersion) {
+    //     localStorage.removeItem("pastel_game");
+    //     setGame(today(gamekey()));
+    //   }
+    //   if (newMajorMinorVersion) {
+    //     localStorage.removeItem("pastel_info");
+    //     open();
+    //   }
+    // }
   });
 
   return (
